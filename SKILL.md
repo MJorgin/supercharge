@@ -27,7 +27,7 @@ description: 当用户希望选择或应用思维框架、方法论来拆解复�
 
 ### 2. 选择并解决
 
-依据问题与可获得的数据、时间、工具、能力和风险选择方法，通常一种即可；不同子问题可组合互补方法。方法是可调整的工具，不是必须套用的仪式。按任务只查阅相关方法：[基础方法](references/methods.md)、[调查、战略与协作](references/field-methods.md)、[增长与用户分析](references/growth.md)、[产品与团队执行](references/product.md)、[商业与投资分析](references/investment.md)、[逻辑与论证](references/logic.md)、[博弈与谈判](references/game-theory.md)；将选中的方法落实为具体行动。目录之外有更合适的方法时也可使用。用户只要求推荐时给出可操作的使用方式，不擅自扩大任务或执行外部操作。
+依据问题与可获得的数据、时间、工具、能力和风险选择方法，通常一种即可；不同子问题可组合互补方法。方法是可调整的工具，不是必须套用的仪式。按任务只查阅相关方法：[基础方法](references/methods.md)、[调查、战略与协作](references/field-methods.md)、[增长与用户分析](references/growth.md)、[产品与团队执行](references/product.md)、[商业与投资分析](references/investment.md)、[逻辑与论证](references/logic.md)、[博弈与谈判](references/game-theory.md)；将选中的方法落实为具体行动。英文手册位于 `references/en/`，与中文手册同名；根据用户语言或任务需要选择版本，并在需要原始资料时查看中文手册中的来源链接。目录之外有更合适的方法时也可使用。用户只要求推荐时给出可操作的使用方式，不擅自扩大任务或执行外部操作。
 
 任务需要特定领域或工具的专业能力时，结合可用的专业 Skill、工具和其适用要求：本 Skill 负责问题识别和方法选择，专业 Skill 负责领域执行，必要时整合结果并检查原目标。不要假设某个 Skill、工具或委派能力一定可用；不可用时使用现有能力给出可靠替代并说明实质限制。
 

@@ -145,22 +145,24 @@ For the first request, the agent might combine **funnel analysis, cohort retenti
 
 ## 方法库 / Method library
 
-方法指南按领域组织，按需查阅。The reference library is organized by area and loaded as needed. Skill instructions and method guides are currently written in Chinese.
+首页仅展示方法分类；完整方法库在公开仓库中，可通过以下链接查看和安装。每份手册都有中文与英文版本，Skill 主指令目前为中文。
 
-| 方法领域 / Area | 手册 / Reference |
-| --- | --- |
-| 基础方法 / Foundations | [methods.md](references/methods.md) |
-| 调查、战略与协作 / Research, strategy & collaboration | [field-methods.md](references/field-methods.md) |
-| 增长与用户 / Growth & users | [growth.md](references/growth.md) |
-| 产品与执行 / Product & execution | [product.md](references/product.md) |
-| 商业与投资 / Business & investment | [investment.md](references/investment.md) |
-| 逻辑与论证 / Logic & argument | [logic.md](references/logic.md) |
-| 博弈与谈判 / Game theory & negotiation | [game-theory.md](references/game-theory.md) |
+This page shows categories only. The complete method library is public and included when you install the repository. Each guide is available in Chinese and English; the main skill instructions are currently in Chinese.
+
+| 方法领域 / Area | 中文 | English |
+| --- | --- | --- |
+| 基础方法 / Foundations | [中文](references/methods.md) | [English](references/en/methods.md) |
+| 调查、战略与协作 / Research, strategy & collaboration | [中文](references/field-methods.md) | [English](references/en/field-methods.md) |
+| 增长与用户 / Growth & users | [中文](references/growth.md) | [English](references/en/growth.md) |
+| 产品与执行 / Product & execution | [中文](references/product.md) | [English](references/en/product.md) |
+| 商业与投资 / Business & investment | [中文](references/investment.md) | [English](references/en/investment.md) |
+| 逻辑与论证 / Logic & argument | [中文](references/logic.md) | [English](references/en/logic.md) |
+| 博弈与谈判 / Game theory & negotiation | [中文](references/game-theory.md) | [English](references/en/game-theory.md) |
 
 ```text
 supercharge/
 ├── SKILL.md              # Routing and execution instructions
-├── references/           # Method guides and sources
+├── references/           # Chinese guides, sources, and English companions
 ├── assets/               # README illustrations
 ├── README.md
 └── LICENSE
