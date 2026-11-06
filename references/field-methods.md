@@ -1,48 +1,48 @@
 # 方法库：调查、战略与协作
 
-以下是根据公开资料整理的操作指引，不代表对特定场景的效果已验证。历史思想的工作场景应用是跨领域类比，非原文的直接结论；应检查前提，不将历史条件当成商业规律。
+以下是根据公开资料整理的操作指引，不代表对特定场景的效果已验证。跨领域借鉴时应检查相似之处、关键差异和适用前提。
 
 ## 调查研究：先接触事实
 
 - 场景：做判断所需的用户行为、现场流程或实际处境尚不清楚。
 - 做法：确定需要回答的问题；接触相关人员、记录和实际流程；同时收集反例及不同视角；区分观察、转述、推断和缺口，再提出可验证判断。
 - 边界：少量访谈不自动代表总体；尊重隐私和权限。缺乏实地条件时用已有材料推进并明确局限，不声称已做现场调查。
-- 来源：[《改造我们的学习》](https://www.marxists.org/chinese/maozedong/marxist.org-chinese-mao-19410519.htm)。
+- 参考：[Y Combinator — Do things that don’t scale](https://www.ycombinator.com/library/96-do-things-that-dont-scale)。
 
-## 主要矛盾：识别阶段性关键问题
+## 识别阶段性关键问题
 
 - 场景：问题相互牵连、资源有限，需要决定当前先解决什么。
 - 做法：列出目标与关键制约，比较各因素对目标、其他问题和实施可行性的影响；提出当前优先点及证据，再说明哪些问题必须并行处理、何时重新判断。
-- 边界：这是由《矛盾论》延伸到工作决策的类比；关键问题不一定只有一个，也会随阶段变化。不能凭一句“抓主要矛盾”忽略必要安全和底线。
-- 来源：[《矛盾论》](https://www.marxists.org/chinese/maozedong/marxist.org-chinese-mao-193708.htm)。
+- 边界：关键问题不一定只有一个，也会随阶段变化；不能为了优先级而忽略必要安全和底线。
+- 参考：[Intercom — RICE prioritization](https://www.intercom.com/blog/rice-simple-prioritization-for-product-managers)。
 
 ## 具体问题具体分析：区分共性与条件
 
 - 场景：准备照搬其他团队、行业或历史案例的经验。
 - 做法：先提炼经验依赖的条件；对照当前目标、资源、人群和约束，列出相同点和关键差异；调整方案，用小范围试验检验。
-- 边界：这是从矛盾特殊性延伸的实践指引；不能因为强调特殊性而忽略成熟经验，也不能因案例类似便假定结果一致。
-- 来源：[《矛盾论》](https://www.marxists.org/chinese/maozedong/marxist.org-chinese-mao-193708.htm)。
+- 边界：不能因为强调特殊性而忽略成熟经验，也不能因案例类似便假定结果一致。
+- 参考：[Stanford Encyclopedia of Philosophy — Argument](https://plato.stanford.edu/entries/argument/)。
 
 ## 以点带面：深查个案与分阶段推广
 
 - 场景：现象复杂，需要理解机制；或方案尚未验证，想先小范围试行。
 - 做法：有目的地选典型和反例，深入记录背景、过程与结果；提炼待验证假设；在其他条件不同的对象上检验，再决定是否推广及如何调整。
 - 边界：个案不能自动代表总体，试点成功不保证规模化成功；注明选择偏差、资源支持与其他场景的差异。调查个案和试点推广是两个可独立使用的步骤。
-- 来源：历史调查实践参见[《〈农村调查〉的序言和跋》](https://www.marxists.org/chinese/maozedong/marxist.org-chinese-mao-194134.htm)；分阶段推广是现代工作场景的应用建议。
+- 参考：[Strategyzer — Design-Test Loop](https://www.strategyzer.com/library/the-role-of-an-effective-innovation-coach)。
 
-## 从边缘切入再扩展：历史战略的商业类比
+## 细分市场切入与扩展
 
-- 历史语境：“农村包围城市”是特定历史条件下涉及根据地建设与战争的革命道路，不能简化为一般商业公式。[历史说明](https://english.scio.gov.cn/m/featured/chinakeywords/2022-07/13/content_78321981.htm)。
-- 工作类比：资源有限、核心市场门槛高时，考虑从需求明确且能够服务好的细分人群切入，验证价值和可持续性，再审视是否具备进入相邻市场的条件。
+- 适用：资源有限、核心市场门槛高时，考虑从需求明确且能够服务好的细分人群切入，验证价值和可持续性，再审视是否具备进入相邻市场的条件。
 - 做法：界定目标市场和可服务的细分人群；比较进入成本、需求、竞争和资源；用可测指标验证，积累案例和能力；检查相邻市场的需求与渠道是否可迁移，再决定扩大。
-- 边界：这只是提取“从有利切入点逐步扩展”的类比，不等同原战略或其历史结论。细分市场太小、需求不通或成本不可持续时，应停止或换路径；不得假设边缘市场必然通向核心市场。
+- 边界：细分市场太小、需求不通或成本不可持续时，应停止或换路径；不能假设细分市场必然通向更大市场。
+- 参考：[Y Combinator — Do things that don’t scale](https://www.ycombinator.com/library/96-do-things-that-dont-scale)。
 
-## 实践—认识—再实践：小步反馈
+## 小步实践与反馈
 
 - 场景：答案需要在行动和反馈中逐步形成。
 - 做法：明确当前假设和最低成本的安全行动；记录预期、实际观察及偏差；更新判断后决定调整、扩大或停止。
 - 边界：与 PDCA、最小可行测试有重叠，按任务择用即可；不能把一次局部成功视为普遍规律。重大不可逆事项不应贸然试错。
-- 来源：[《实践论》](https://www.marxists.org/chinese/maozedong/marxist.org-chinese-mao-193707.htm)。
+- 参考：[AHRQ — Plan-Do-Study-Act](https://www.ahrq.gov/health-literacy/improve/precautions/tool2b.html)。
 
 ## 事后复盘（AAR）
 

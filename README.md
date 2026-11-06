@@ -1,5 +1,7 @@
 <div align="center">
 
+<img src="assets/supercharge-hero.png" alt="Supercharge: selecting a useful path from many possibilities" width="100%">
+
 # Supercharge · 超给力
 
 **给 AI 一套找方法、用方法、检查结果的工作方式。**<br>
@@ -25,6 +27,8 @@ Supercharge 是一个面向 AI Agent 的 Skill。你用自然语言描述目标�
 > **方法帮助我们提出更好的问题和检验路径；它本身不能替代数据、领域知识或真实验证。**
 
 ### 它如何工作？
+
+![从问题到方法、执行和验证的工作流程](assets/supercharge-workflow.png)
 
 1. **理解问题**：明确目标、交付物、约束、现有证据和关键未知。
 2. **选择并执行**：从方法库中按需选择一种或多种互补方法；必要时结合专业 Skill 或查阅可靠资料。
@@ -141,22 +145,23 @@ For the first request, the agent might combine **funnel analysis, cohort retenti
 
 ## 方法库 / Method library
 
-Supercharge currently contains **90 entries across seven reference files**. The skill instructions and method guides are currently written in Chinese; the examples below include English names for navigation.
+方法指南按领域组织，按需查阅。The reference library is organized by area and loaded as needed. Skill instructions and method guides are currently written in Chinese.
 
-| 方法领域 / Area | 示例 / Examples | 手册 / Reference |
-| --- | --- | --- |
-| 基础方法 / Foundations | First principles, ablation, Monte Carlo, PDCA | [methods.md](references/methods.md) |
-| 调查、战略与协作 / Research, strategy & collaboration | Field investigation, AAR, DACI | [field-methods.md](references/field-methods.md) |
-| 增长与用户 / Growth & users | AARRR, cohort retention, North Star | [growth.md](references/growth.md) |
-| 产品与执行 / Product & execution | 5W1H, RICE, OKR, value proposition canvas | [product.md](references/product.md) |
-| 商业与投资 / Business & investment | Why Now, CAC, LTV, revenue retention | [investment.md](references/investment.md) |
-| 逻辑与论证 / Logic & argument | Deduction, abduction, counterexamples, Bayesian updating | [logic.md](references/logic.md) |
-| 博弈与谈判 / Game theory & negotiation | Nash equilibrium, credible commitment, BATNA, ZOPA | [game-theory.md](references/game-theory.md) |
+| 方法领域 / Area | 手册 / Reference |
+| --- | --- |
+| 基础方法 / Foundations | [methods.md](references/methods.md) |
+| 调查、战略与协作 / Research, strategy & collaboration | [field-methods.md](references/field-methods.md) |
+| 增长与用户 / Growth & users | [growth.md](references/growth.md) |
+| 产品与执行 / Product & execution | [product.md](references/product.md) |
+| 商业与投资 / Business & investment | [investment.md](references/investment.md) |
+| 逻辑与论证 / Logic & argument | [logic.md](references/logic.md) |
+| 博弈与谈判 / Game theory & negotiation | [game-theory.md](references/game-theory.md) |
 
 ```text
 supercharge/
 ├── SKILL.md              # Routing and execution instructions
 ├── references/           # Method guides and sources
+├── assets/               # README illustrations
 ├── README.md
 └── LICENSE
 ```
