@@ -1,22 +1,166 @@
-# 超给力 Supercharge
+<div align="center">
 
-面向 AI Agent 的方法选择与执行 Skill。根据任务需要拆解问题、选择适当方法、落实行动并检查结果；最终简要说明实际使用的方法。
+# Supercharge · 超给力
 
-方法库涵盖逻辑与论证、博弈与谈判、增长、产品、投资、战略和实验。每个条目说明适用场景、操作及边界；方法是可检验的工具，不保证特定结论或结果。
+**给 AI 一套找方法、用方法、检查结果的工作方式。**<br>
+**A practical methodology router for AI agents.**
 
-## 目录
+拆解问题 · 选择方法 · 动手执行 · 检查结果<br>
+Frame the problem · Choose a method · Act · Verify
 
-- `SKILL.md`：路由、执行和交付规则。
-- `references/`：按场景组织的中文方法手册及资料来源。
+[中文](#中文) · [English](#english) · [方法库 / Method library](#方法库--method-library) · [MIT License](LICENSE)
 
-## 使用
+</div>
 
-把本目录作为一个名为 `supercharge` 的 Skill 目录，按所使用的 Agent 平台支持的方式安装或加载；平台如何发现或调用 Skill 可能不同。也可直接让支持本格式的 Agent 阅读 `SKILL.md`，并按其中的相对路径按需读取参考文件。
+---
 
-示例请求：
+## 中文
 
-- 用超给力帮我分析产品注册后留存不佳的可能原因，区分假设和已有证据。
-- 用超给力帮我评估三个方案，考虑各方激励和失败风险。
-- 检查这段论证的前提、推理和可能的反例。
+### Supercharge 是什么？
 
-方法论不能替代事实核查。投资、医疗、法律等高风险任务需要适用的专业能力和可靠、最新的数据。项目中附有外部参考链接，未宣称所有方法都经过实际任务效果验证。
+Supercharge 是一个面向 AI Agent 的 Skill。你用自然语言描述目标，它根据问题的性质、现有证据和现实约束，选择合适的思维方式或方法论，帮助你推进任务，并在交付时简要说明实际用了什么方法。
+
+它不要求你记住每一个专业术语。无论你想排查增长问题、比较方案、检查论证，还是设计一次实验，Supercharge 都可以从方法库中寻找合适的起点。简单任务则可以直接处理，不必强行套用框架。
+
+> **方法帮助我们提出更好的问题和检验路径；它本身不能替代数据、领域知识或真实验证。**
+
+### 它如何工作？
+
+1. **理解问题**：明确目标、交付物、约束、现有证据和关键未知。
+2. **选择并执行**：从方法库中按需选择一种或多种互补方法；必要时结合专业 Skill 或查阅可靠资料。
+3. **检查与交付**：根据任务核对事实、假设和结果，区分已经完成的验证与建议开展的测试。
+4. **说明方法**：简要告诉你实际使用的方法及作用；如果要求纯代码或严格 JSON，则不破坏指定格式。
+
+工作深度随任务复杂度和风险调整。出现新信息时，Supercharge 可以重新判断问题或更换方法。
+
+### 安装到 Codex
+
+需要 Git。以下命令将整个仓库克隆到**当前项目**的 Agent Skills 目录：
+
+```bash
+mkdir -p .agents/skills
+git clone https://github.com/MJorgin/supercharge.git .agents/skills/supercharge
+```
+
+如需在多个项目中使用，可以将目标路径改为 `~/.agents/skills/supercharge`。如果目标目录已存在，`git clone` 会报错；请先检查现有内容，再决定如何更新。安装后，如 Skill 没有立即出现，可重新启动 Codex 或开启新会话。
+
+其他支持 Agent Skills 的工具，也可以将完整目录放入对应的 Skills 目录。具体位置和调用方式取决于所用工具；请保留 `SKILL.md` 与 `references/` 的相对位置。
+
+### 开始使用
+
+在支持显式调用的环境中，可输入 `$supercharge`，也可以直接说“使用超给力”。例如：
+
+```text
+使用 $supercharge：我们的产品注册人数在增长，但新用户留存下降。
+请帮我拆解可能原因，区分已有事实和待验证假设，设计下一步调查。
+```
+
+```text
+使用超给力：我要比较三个供应商方案。
+请考虑价格、交付风险、长期合作和谈判中的替代方案。
+```
+
+```text
+使用超给力：检查下面这段论证的前提、推理和可能的反例。
+```
+
+对于第一个请求，它可能组合**漏斗分析、用户群组留存和假设驱动分析**；有真实数据时再进行分析。具体方法由任务与可用证据决定，而不是预设所有请求都走同一条流程。
+
+### 使用边界
+
+- **输入决定上限**：缺少数据、模型或权限时，说明缺口和假设，不编造结果。
+- **验证要真实发生**：实验方案、模拟设计和已经完成的实验是不同的事情。
+- **方法可以跨领域借鉴**：先检查问题结构和适用前提，再结合当前场景调整。
+- **联网是按需能力**：是否可搜索取决于所用环境和用户要求；禁用联网时使用现有资料并说明限制。
+- **方法库仍在完善**：条目提供适用场景、步骤和边界，但尚未逐项通过真实任务验证。
+
+---
+
+## English
+
+### What is Supercharge?
+
+Supercharge is an AI agent skill for choosing and applying practical methods. Describe your goal in plain language, and it considers the problem, available evidence, and constraints before selecting a useful way forward. After delivering the result, it briefly explains the methods actually used.
+
+You do not need to memorize framework names. Supercharge can draw on its library for problems ranging from growth diagnostics and decision-making to argument review and experiment design. Straightforward tasks can remain straightforward.
+
+> **Methods help frame questions and tests; they do not replace evidence, domain expertise, or real-world validation.**
+
+### How it works
+
+1. **Frame** the objective, deliverable, constraints, evidence, and unknowns.
+2. **Choose and act** using one or more suitable methods, consulting specialist skills or reliable sources when appropriate.
+3. **Verify and deliver** by checking facts, assumptions, and results; distinguish completed checks from proposed tests.
+4. **Explain the approach** briefly, without breaking an explicitly requested format such as code-only or strict JSON.
+
+The depth of work adapts to the task and its consequences. When new evidence changes the picture, the approach can change too.
+
+### Install for Codex
+
+Git is required. Clone the complete repository into the Agent Skills directory of your **current project**:
+
+```bash
+mkdir -p .agents/skills
+git clone https://github.com/MJorgin/supercharge.git .agents/skills/supercharge
+```
+
+For use across projects, replace the destination with `~/.agents/skills/supercharge`. If that directory already exists, Git will refuse to clone into it; inspect the existing content before updating it. If the skill does not appear immediately, restart Codex or start a new session.
+
+For other Agent Skills-compatible tools, put the complete directory in the tool's supported skills location. Discovery and invocation vary by tool; keep `SKILL.md` and `references/` together.
+
+### Try it
+
+In an environment that supports explicit invocation, use `$supercharge`, or ask the agent to use Supercharge directly:
+
+```text
+Use $supercharge: Our sign-ups are growing, but new-user retention is falling.
+Separate known facts from hypotheses and propose the next investigation.
+```
+
+```text
+Use Supercharge to compare three suppliers, considering price, delivery risk,
+long-term cooperation, and our alternatives if negotiations fail.
+```
+
+```text
+Use Supercharge to examine the premises, reasoning, and possible counterexamples
+in the following argument.
+```
+
+For the first request, the agent might combine **funnel analysis, cohort retention, and hypothesis-driven analysis**, depending on the available evidence. These are examples, not a mandatory sequence.
+
+### Boundaries
+
+- **Evidence matters**: missing data, models, or permissions must be identified rather than invented.
+- **Verification must be real**: a proposed experiment is not a completed experiment.
+- **Cross-domain methods need adaptation**: check structural similarities and assumptions before transferring a method.
+- **Web research is conditional**: it depends on the environment and the user's instructions.
+- **The library is evolving**: entries describe use cases, steps, and limitations; they have not all been validated on real tasks.
+
+---
+
+## 方法库 / Method library
+
+Supercharge currently contains **90 entries across seven reference files**. The skill instructions and method guides are currently written in Chinese; the examples below include English names for navigation.
+
+| 方法领域 / Area | 示例 / Examples | 手册 / Reference |
+| --- | --- | --- |
+| 基础方法 / Foundations | First principles, ablation, Monte Carlo, PDCA | [methods.md](references/methods.md) |
+| 调查、战略与协作 / Research, strategy & collaboration | Field investigation, AAR, DACI | [field-methods.md](references/field-methods.md) |
+| 增长与用户 / Growth & users | AARRR, cohort retention, North Star | [growth.md](references/growth.md) |
+| 产品与执行 / Product & execution | 5W1H, RICE, OKR, value proposition canvas | [product.md](references/product.md) |
+| 商业与投资 / Business & investment | Why Now, CAC, LTV, revenue retention | [investment.md](references/investment.md) |
+| 逻辑与论证 / Logic & argument | Deduction, abduction, counterexamples, Bayesian updating | [logic.md](references/logic.md) |
+| 博弈与谈判 / Game theory & negotiation | Nash equilibrium, credible commitment, BATNA, ZOPA | [game-theory.md](references/game-theory.md) |
+
+```text
+supercharge/
+├── SKILL.md              # Routing and execution instructions
+├── references/           # Method guides and sources
+├── README.md
+└── LICENSE
+```
+
+## License
+
+[MIT](LICENSE) © 2026 MJorgin
