@@ -10,7 +10,7 @@
 拆解问题 · 选择方法 · 动手执行 · 检查结果<br>
 Frame the problem · Choose a method · Act · Verify
 
-[中文](#中文) · [English](#english) · [方法库 / Method library](#方法库--method-library) · [MIT License](LICENSE)
+[中文](#中文) · [English](#english)
 
 </div>
 
